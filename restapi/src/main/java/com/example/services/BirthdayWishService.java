@@ -10,10 +10,16 @@ import org.springframework.stereotype.Service;
 import com.example.model.StaticData;
 import com.example.model.User;
 
+/*
+ * 	BirthdayWishService is used to do two things
+ * 1: To add user to our User List with will used by our Wishing service to wish User
+ * 2: To check is Wishing service is active if not it will start the service
+ * 
+ */
 @Service
 @Scope("singleton")
 public class BirthdayWishService {
-	
+
 	
 	@Autowired
 	WishingService wishingService;

@@ -22,7 +22,11 @@ import org.springframework.stereotype.Service;
 
 import com.example.model.StaticData;
 import com.example.model.User;
-
+/*
+ * WishingService is the  Service which is used to wish BIrthday to users 
+ * As soon as the Service is started it takes current date form the server and check is there any
+ * user in list to which Birth date matches to today's date. 
+ */
 @Service
 @Scope("singleton")
 public class WishingService implements Runnable {
